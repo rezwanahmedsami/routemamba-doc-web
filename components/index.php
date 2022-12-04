@@ -3,7 +3,7 @@ include "../includes/Global.php";
 ?>
 <link rel="stylesheet" href="scribbler-landing.css">
 <div class="hero">
-  <img class="banner-logo" src="./images/logo-big.svg" alt="">
+  <img class="banner-logo" src="./images/logo-big.svg" alt="Routemamba">
       <h1 class="hero__title">Routemamba</h1>
       <p class="hero__description">Convert your web application single page by raw coding.</p>
     </div>
@@ -18,11 +18,13 @@ include "../includes/Global.php";
         <h3 class="section__title">Installation</h3>
         <div class="tab__container">
           <ul class="tab__menu">
-            <li class="tab active" data-tab="mac">Script Tag</li>
+            <li class="tab active" data-tab="download">Download</li>
+            <li class="tab" data-tab="mac">Script Tag</li>
             <li class="tab" data-tab="linux">npm</li>
           </ul>
           <pre class="nohighlight code">
-            <code class="tab__pane active mac"><?= $scriptInstallationLink ?></code>
+          <code class="tab__pane active download"><b><a class="button--primary" href="">Download Latest</a></b></code>
+            <code class="tab__pane mac"><?= $scriptInstallationLink ?></code>
             <code class="tab__pane linux"><?= $npmInstallation; ?></code>
           </pre>
         </div>
@@ -30,79 +32,58 @@ include "../includes/Global.php";
       <div class="feature">
         <div class="feature__item">
           <h3 class="section__title">Fast & Light</h3>
-          <p>Start writing your notes immediately in any terminal! No more time wasted on navigating and opening your text editor.</p>
+          <p>Routemamba is the faster and more lightweight library. You have to just link it by script tag and do some configuration by creating an <span class="code code--inline">app.js</span> file. </p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">File Syncing</h3>
-          <p>Save your file in Dropbox then you can access to it from anywhere.</p>
+          <h3 class="section__title">Customizable</h3>
+          <p>By using this library you can develop a more customizable web app. We just developed this library, especially for raw coders and raw projects.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Secure</h3>
-          <p>Encrypt your notes optionally. No one can get to your secrets! </p>
+          <h3 class="section__title">Server side rendering</h3>
+          <p>We verified that you can do also server-side rendering by PHP, to develop SEO friendly web app.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Configuration</h3>
-          <p>Maintain all your settings in a single <span class="code code--inline">config.json</span> file. Never need to redo the setting every single time jotting down a note.</p>
+          <h3 class="section__title">SEO friendly</h3>
+          <p>When you are routing, you can handle your web SEO. Check our <b><a href="doc.php" class="docLink">documentation</a></b> for more info.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Highlightings</h3>
-          <p>For better readability, scribbler has a clean, beautiful color scheme allow you to scan files fast.</p>
+          <h3 class="section__title">Open source</h3>
+          <p>Routemamba is an open-source library, which means everyone can use this library fully free for commercial use. And also can contribute to <b><a href="<?= $githubLink ?>">GitHub</a></b>.</p>
         </div>
         <div class="feature__item">
-          <h3 class="section__title">Keybindings</h3>
-          <p>You can expect common keybindings for scribbler. Customize <span class="code code--inline">bindings.json</span> for your own liking! </p>
+          <h3 class="section__title">Reactive system</h3>
+          <p>By Routemamba state management system you can make your application reactive. Check our <b><a href="doc.php" class="docLink">documentation</a></b> for more info.</p></p>
         </div>
       </div>
       
       <div class="callout">
         <p>Read our documentation to use <b>Routemamba</b> in your project.</p>
-        <a href="doc.php" id="docLink" class="button--primary">Documentation</a>
+        <a href="doc.php" class="button--primary docLink">Documentation</a>
       </div>
     </div>
     <div class="changelog">
       <div class="wrapper">
-        <h3 class="section__title">Changelog</h3>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.7</h4>
-            <small class="changelog__date">10/12/2017</small>
+        <h3 class="section__title">Releases</h3>
+
+        <?php
+
+        foreach ($releasesData as $key => $value) {
+        ?>
+          <div class="changelog__item">
+            <div class="changelog__meta">
+              <h4 class="changelog__title"><?= $value["version"] ?></h4>
+              <small class="changelog__date"><?= $value["date"] ?></small>
+            </div>
+            <div class="changelog__detail">
+            <?= $value["details"] ?>
+            </div>
           </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Improving the writing workflow with better key bindings</li>
-              <li>Design updates</li>
-              <li>SSL Verification for web hooks</li>
-              <li>Render Emoji</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.6</h4>
-            <small class="changelog__date">7/30/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Adding Unicode support</li>
-              <li>Basic text highlighting</li>
-              <li>Fresh Design</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">v0.5</h4>
-            <small class="changelog__date">5/10/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Save default md file in new folders</li>
-              <li>Ability to quick search on existing notes</li>
-            </ul>
-          </div>
-        </div>
+        <?php
+          }
+        ?>
+
         <div class="changelog__callout">
-          <a href="#" class="button--secondary">Checkout Full Log</a>
+          <a target="_blank" href="https://github.com/rezwanahmodsami/routemamba/releases" class="button--secondary">Checkout All Releases</a>
         </div>
       </div>
     </div>
@@ -111,17 +92,19 @@ include "../includes/Global.php";
 <script src="scribbler.js"></script>
 
 <script>
-  var docLink = document.getElementById("docLink");
+  var docLink = document.querySelectorAll(".docLink");
 
-  docLink?.addEventListener("click", function (e) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
+  docLink.forEach(link =>{
+    link?.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
 
-    let url = this.getAttribute("href");
+        let url = this.getAttribute("href");
 
-    routemamba.navigate(url, {}, {
-        header_load: true
-    });
-})
+        routemamba.navigate(url, {}, {
+            header_load: true
+        });
+    })
+  });
 </script>
     

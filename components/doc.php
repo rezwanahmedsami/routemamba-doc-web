@@ -5,10 +5,11 @@
         <ul>
           <li class="js-btn selected">Get Started</li>
           <li class="js-btn">Installation guide</li>
-          <li class="js-btn">App js setup</li>
-          <li class="js-btn">Http rotues</li>
+          <li class="js-btn">Configurations</li>
+          <li class="js-btn">Http Routes</li>
           <li class="js-btn">Navigate Method</li>
           <li class="js-btn">State Management</li>
+          <li class="js-btn">Server side rendering</li>
           <li class="js-btn">Contribution</li>
         </ul>
       </aside>
@@ -23,7 +24,7 @@
           <p>And also it's easy to use. You can use directly to your php project. To use that script you can directly add our cdn link in your html tag or also you can add by downloading <code class="code">routemamba.min.js</code> . Follow the guideline to use routemamba in your project.</p>
         </section>
         <hr>
-        <section class="js-section">
+        <section id="get-started" class="js-section">
           <h3 class="section__title">Get Started</h3>
           <p>set files and folder like this to use <code class="code">routemamba.min.js</code> :</p>
           <h3 class="section__title">Installation</h3>
@@ -681,6 +682,18 @@
           </div>
 
           <div class="js-section">
+            <h2>Server Side Rendering (SSR)</h2>
+          <p>Server side rendering tested by these languages.</p>
+            <table id="customers">
+              <tr>
+                <td>PHP</td>
+                <td style="color: green;">Supported &#10003;</td>
+              </tr>
+            </table>
+            <hr />
+          </div>
+
+          <div class="js-section">
             <h2>Contribution</h2>
             <hr>
             <p>In general, we follow the "fork-and-pull" Git workflow.</p>
@@ -724,51 +737,10 @@
             
 
           </div>
-
-
-
-
-
-
-          <table id="customers">
-            <tr>
-              <th>Options</th>
-              <th>Value</th>
-              <th>Default</th>
-            </tr>
-            <tr>
-              <td>encryption</td>
-              <td>encrypt all notes before saving. If turned on, it requires password to open the file.</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>highlighting</td>
-              <td>Show syntax highlight on markdown text.</td>
-              <td>true</td>
-            </tr>
-            <tr>
-              <td>prettyTable</td>
-              <td>Render table with Scribbler’s pretty table style.</td>
-              <td>true</td>
-            </tr>
-          </table>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <hr />
         </section>
-        <section class="js-section">
-          <h3 class="section__title">Keybindings</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-          <hr />
-        </section>
-        <section class="js-section">
-          <h3 class="section__title">Issues</h3>
-          <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
-          <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
-        </section>
+        
       </article>
     </div>
 
-    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- <script>hljs.initHighlightingOnLoad();</script> -->
     <script src="scribbler.js"></script>

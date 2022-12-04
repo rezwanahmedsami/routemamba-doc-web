@@ -115,6 +115,9 @@ if (document.getElementsByClassName('demo').length > 0) {
 
   function typeItOut () {
     if (i < txt.length) {
+      if (document.getElementsByClassName('demo')[0] == undefined || document.getElementsByClassName('demo')[0] == null) {
+        return;
+      }
       document.getElementsByClassName('demo')[0].innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeItOut, speed);
@@ -125,7 +128,7 @@ if (document.getElementsByClassName('demo').length > 0) {
 }
 
 // toggle tabs on codeblock
-window.addEventListener("load", function() {
+// window.addEventListener("load", function() {
   // get all tab_containers in the document
   var tabContainers = getAll(".tab__container");
 
@@ -156,7 +159,7 @@ window.addEventListener("load", function() {
     clickedTab.classList.add('active');
     activePane.classList.add('active');
   }
-});
+// });
 
 //in page scrolling for documentaiton page
 var btns = getAll('.js-btn');
