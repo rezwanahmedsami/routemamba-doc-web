@@ -1,5 +1,5 @@
 //live
-routemamba.registerServerHost('https://routemamba.com/');
+routemamba.registerServerHost('https://www.routemamba.com/');
 // local
 // routemamba.registerServerHost('http://localhost:3000/');
 
