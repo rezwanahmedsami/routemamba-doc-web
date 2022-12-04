@@ -50,6 +50,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
       <link rel="stylesheet" href="scribbler-global.css">
       <link rel="author" href="humans.txt">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
   <body>
 
