@@ -23,7 +23,7 @@ include "../includes/Global.php";
             <li class="tab" data-tab="linux">npm</li>
           </ul>
           <pre class="nohighlight code">
-          <code class="tab__pane active download"><b><a class="button--primary" href="">Download Latest</a></b></code>
+          <code class="tab__pane active download"><b><a class="button--primary" href="<?= $downloadLink ?>">Download Latest</a></b></code>
             <code class="tab__pane mac"><?= $scriptInstallationLink ?></code>
             <code class="tab__pane linux"><?= $npmInstallation; ?></code>
           </pre>
