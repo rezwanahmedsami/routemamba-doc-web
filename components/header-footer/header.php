@@ -1,5 +1,5 @@
 <nav>
-      <div class="logo"></div>
+      <div class="logo">Routemamba</div>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
         <li class="menu__item"><a href="doc.php" id="docnav" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>

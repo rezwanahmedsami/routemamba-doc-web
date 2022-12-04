@@ -39,40 +39,7 @@ if (document.getElementsByClassName('demo').length > 0) {
         error_content: 'error',
         http_url_change: false,
         http_url: "index.php"
-     },
-      {
-          method: "GET",
-          meta_loader: true,
-          content_url: "content/about.php",
-          container: "#root",
-          preloader: '<h1>loading...</h2>',
-          data: {},
-          error_content: 'error',
-          http_url_change: false,
-          http_url: "about.php"
-       },
-       {
-          method: "GET",
-          meta_loader: true,
-          content_url: "content/privacy.php",
-          container: "#root",
-          preloader: '<h1>loading...</h2>',
-          data: {},
-          error_content: 'error',
-          http_url_change: false,
-          http_url: "privacy.php"
-       },
-       {
-          method: "GET",
-          meta_loader: true,
-          content_url: "content/tabs-example.php",
-          container: "#root",
-          preloader: '<h1>loading...</h2>',
-          data: {},
-          error_content: 'error',
-          http_url_change: false,
-          http_url: "tabs-example.php"
-       },
+     }
   ]);
   
   routemamba.register_routes_headers([

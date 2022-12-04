@@ -1,8 +1,14 @@
 /* nav specialized to landing page */
 .logo {
-  background: url('logo.svg') no-repeat;
-  background-size: contain;
   margin: 1rem 0 0 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.banner-logo{
+  box-shadow: 1px 2px 5px gray;
+  border-radius: 50%;
 }
 
 nav {
