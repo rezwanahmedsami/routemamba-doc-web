@@ -21,8 +21,6 @@
         
       ?>
       <title><?= $title ?></title>
-      <meta name="description" content="">
-
       <meta name="title" content="<?= $title ?>">
       <meta name="description" content="Routemamba is a js library to develop single page web applications easily, specially for php webapp. ">
       <meta name="keywords" content="routemamba, Route mamba, route mamba, javascript library, routemamba js, Reactive appplication, react js, next js, single page web app">
