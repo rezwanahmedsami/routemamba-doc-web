@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta>
       <?php
         $route = basename($_SERVER['PHP_SELF']);
@@ -28,6 +28,20 @@
       <meta name="language" content="English">
       <meta name="revisit-after" content="1 days">
       <meta name="author" content="Routemamba">
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://routemamba.com/">
+      <meta property="og:title" content="<?= $title ?>">
+      <meta property="og:description" content="Routemamba is a js library to develop single page web applications easily, specially for php webapp. ">
+      <meta property="og:image" content="https://routemamba.com/images/web-rm-banner.png">
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://routemamba.com/">
+      <meta property="twitter:title" content="<?= $title ?>">
+      <meta property="twitter:description" content="Routemamba is a js library to develop single page web applications easily, specially for php webapp. ">
+      <meta property="twitter:image" content="https://routemamba.com/images/web-rm-banner.png">
       </meta>
 
       <script src="./js/routemamba.min.js"></script>
