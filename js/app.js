@@ -1,7 +1,7 @@
 //live
-routemamba.registerServerHost('https://routemamba.com/');
+// routemamba.registerServerHost('https://routemamba.com/');
 // local
-// routemamba.registerServerHost('http://localhost:3000/');
+routemamba.registerServerHost('http://localhost:3000/');
 
 routemamba.registerMetaUrl("./components/meta.php");
 
