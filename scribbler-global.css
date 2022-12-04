@@ -32,9 +32,9 @@ a, a:hover {
 }
 
 hr {
-  padding: 1rem 0;
+  padding: 0.3rem 0;
   border: 0;
-  border-bottom: 1px solid var(--bg-color);
+  border-bottom: 3px solid #e5e5e5;
 }
 
 * {
@@ -99,7 +99,7 @@ hr {
 
 .code--block {
   white-space: pre-line;
-  padding: 0 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .code--inline {
@@ -166,6 +166,17 @@ hr {
 
 .link--light {
   color: var(--accent-color);
+}
+
+/* link underline */
+.link-underline {
+  color: #0969da;
+}
+
+.link-underline:hover {
+  color: #0969da;
+  text-decoration: underline;
+  text-decoration-color: #0969da;
 }
 
 /* menu */
