@@ -12,13 +12,13 @@ docnav?.addEventListener("click", function (e) {
     });
 })
 
-// homenav?.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     e.stopImmediatePropagation();
+homenav?.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
 
-//     let url = this.getAttribute("href");
+    let url = this.getAttribute("href");
 
-//     routemamba.navigate(url, {}, {
-//         header_load: true
-//     });
-// })
+    routemamba.navigate(url, {}, {
+        header_load: true
+    });
+})
