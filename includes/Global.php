@@ -1,14 +1,14 @@
 <?php
 
 // installation sources
-$scriptInstallationLink = htmlspecialchars('<script src="https://cdn.rezwanahmodsami.com/routemamba/v3.1.x/routemamba.min.js"></script>');
+$scriptInstallationLink = htmlspecialchars('<script src="https://unpkg.com/routemamba/dist/routemamba.min.js"></script>');
 $npmInstallation = 'npm i routemamba';
 
 // external links
 $githubLink = "https://github.com/rezwanahmodsami/routemamba";
 
 
-$downloadLink = "https://github.com/rezwanahmodsami/routemamba/releases/tag/v3.1.1";
+$downloadLink = "https://github.com/rezwanahmodsami/routemamba/releases/tag/v3.1.2";
 
 
 $releasesData = [
